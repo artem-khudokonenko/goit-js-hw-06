@@ -17,7 +17,7 @@ function formSubmit(e) {
     password: password.value,
   };
 
+  console.log(user);
   e.currentTarget.reset();
 
-  return console.log(`Email: ${user.email}, Password: ${user.password}`);
 }

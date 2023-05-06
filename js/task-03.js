@@ -13,14 +13,14 @@ const images = [
   },
 ];
 const galariEl = document.querySelector("ul.gallery")
-function addImg() {
-  const list = images.map(
+function addImg(img) {
+  const list = img.map(
     (element) =>
-    `<li class="img-hw-3"><img src="${element.url}" alt="${element.alt}" width=150px></li>`
+    `<li class="img-hw-3"><img src="${element.url}" alt="${element.alt}" width=150></li>`
   ).join('')
   galariEl.insertAdjacentHTML('beforeend', list)
 }
-addImg()
+addImg(images)
 
 
 console.log(galariEl)
